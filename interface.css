@@ -1,0 +1,28 @@
+#sect1{
+    width: 35%;
+    height:60vh;
+    margin-top: 20vh;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 2px;
+}
+#span{
+    font-weight: 900;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-shadow: 0px 4px 2px brown;
+}
+#inp1{
+    border-radius: 5px;
+}
+#inp2{
+    border-radius: 5px;
+    height: 60px;
+}
+#mybtn{
+    font-weight: bold;
+    color: black;
+    width: 100px;
+    text-shadow: 2px 0px 2px red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div name="calculator">
+    <input type="text"  id="inp1" name="display" id="display">
+    <input type="text" id="inp2">
+    <input type="email" id="inp3">
+    <input type="password" id="inp4">
+    <!-- <button onclick="n()">=</button> -->
+    <!-- <button onclick="calculator.display.value = ''">=1</button> -->
+    <button onclick="nn('olaoluwa')">sign in</button>
+    <div id="ola"></div>
+    </div>
+    <script>
+        var array = [];
+        function n(){
+            inp1.value = eval(inp1.value)
+        }
+        
+        function nnn(){
+            inp1.value=clear(inp1.value)
+        }
+         function nn() {
+            var obj={
+                firstName:inp1.value,
+                lastName:inp2.value,
+                email:inp3.value,
+                password:inp4.value
+
+            }
+            array.push(obj)
+            console.log(array)
+         document.getElementById('ola').innerHTML=obj;
+         document.getElementById("ola").innerHTML = array;
+         }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <center >
+           <div style=" margin-top: 200px; width: 400px; height: 300px;" class="card bg-danger rounded">   
+                <div class="card-text" >
+                    
+                    <input type="text" name="" style=" margin-top: 110px; height: 80px; width: 300px;"value=""  placeholder="Enter value" class="border border-light text-center justify-content-center input" id="userScore">
+                    <p>
+                    <button onclick="checkScore()"class="btn btn-outline-secondary mt-3 button">Check Score</button>
+                    </p>
+                 
+                    
+  
+                </div>
+            </div>
+        </center>
+    </section>
+    <script>
+        function checkScore(){
+            //var scoreOfUser = document.getElementById("userScore").value
+            var scoreOfUser = userScore.value
+            var jambScore = scoreOfUser
+            if(jambScore >= 70 && jambScore <= 100){
+                alert("A")
+            }
+            else if (jambScore >= 59 && jambScore <= 69){
+            remarks = "B"
+            alert(remarks)
+            console.log(remarks)
+            }
+            else if (jambScore >= 49 && jambScore <= 59 ){
+                remarks = "C"
+                alert(remarks)
+                console.log(remarks)
+            }
+            else if (jambScore <= 29 && jambScore <= 39) {
+                remarks = "D" 
+                alert(remarks)
+                console.log(remarks)
+            }
+            else if (jambScore <= 29){
+                remarks = "F"
+                console.log(remarks)
+                alert(remarks)
+            }
+            
+            else if (jambScore < 0){
+                remarks = "Out of bonds"
+                console.log(remarks)
+                alert(remarks)
+            }
+            
+            else if (jambScore > 100){
+                remarks = "Out of bonds"
+                console.log(remarks)
+                alert(remarks)
+            }
+            else{
+                remarks = "Out of bond"
+                console.log(remarks)
+                alert(remarks)
+            }
+
+        }
+        
+       
+
+    </script>
+</body>
+</html>

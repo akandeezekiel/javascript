@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" name="" id="userName" value="">
+    <button onclick="collectName()">click me</button>
+    <p>
+    <input type="text" placeholder="Enter a value" name="" id="userNum" value="">
+    <button onclick="odd()">click me</button>
+    </p>
+
+
+
+    <script>
+        // var age = 11;
+        // if (age<5){
+        //     greeting =  "you are young";
+        //     alert("you are young")
+        //     coonsole.log(greeting);
+
+        // }else if(age<10){
+        //     greeting="hello you are older than 5"
+        //     console.log(greeting);
+        // }else{
+        //     greeting="Good day!!!!"
+        //     console.log(greeting);
+        // }
+        var cutOffMark = 150
+        var jambScore = "kunle";
+        if (jambScore < 150){
+            greeting = "You can do better, try again later:)"
+            console.log(greeting)
+        }
+        else if (jambScore > cutOffMark){
+            greeting = "Above cut off mark:)"
+            console.log(greeting)   
+        }
+        else if (jambScore == cutOffMark){
+            greeting = "Same as cut off mark:)"
+            console.log(greeting)
+        }
+        else{
+            greeting = "Out of bond:)"
+            console.log(greeting)
+        }
+
+
+            // var myNumber = 8
+            // if(myNumber%2 == 0){
+            //     alert("Number is even")
+            // }
+            // else if (myNumber%2 != 0){
+            //     alert("Number is odd")
+            // }
+        //     var age = 40
+        //     var name = "Kunle"
+        //     if (age==40 && name =="Kunle"){
+        //         alert("Yoooo")
+        //     }
+            
+        //     if (age==40 || name =="Kunle"){
+        //         alert("Yoooo")
+        //     }
+        //     var myNumber = 12;
+        //     if( myNumber%myNumber==0 && myNumber%1==0){
+        //         alert("Prime number")
+        //     }
+
+        //     var myNumber  = 20;
+        //     if(myNumber%2==0 && myNumber%3==0 && myNumber%5==0){
+        //         alert("Number is divisible by 2,3and 5")
+        //     }
+        //     console.log("Kunle")
+            // console.log(document.getElementById("userName").value)
+    
+
+    function collectName(){
+        var myName=(document.getElementById("userName").value)
+        alert(myName)
+    }
+        // collectName()
+    function odd(){
+        var myNumber = document.getElementById("userNum").value
+            if(myNumber%2 == 0){
+                alert("Number is even")
+            }
+            else if (myNumber%2 != 0){
+                alert("Number is odd")
+            }
+    }
+    </script>
+</body>
+</html>
