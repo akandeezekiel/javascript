@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <style>
+                .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+    </style>
 </head>
 <body>
     <section>
         <center >
-           <div style=" margin-top: 200px; width: 400px; height: 300px;" class="card bg-danger rounded">   
+           <div style=" margin-top: 200px; width: 400px; height: 300px;" class="card bg-primary rounded">   
                 <div class="card-text" >
                     
                     <input type="text" name="" style=" margin-top: 110px; height: 80px; width: 300px;"value=""  placeholder="Enter value" class="border border-light text-center justify-content-center input" id="userScore">
@@ -41,18 +64,24 @@
                 alert(remarks)
                 console.log(remarks)
             }
-            else if (jambScore <= 29 && jambScore <= 39) {
+            else if (jambScore >= 35 && jambScore <= 39) {
                 remarks = "D" 
                 alert(remarks)
                 console.log(remarks)
             }
-            else if (jambScore <= 29){
+            
+            else if (jambScore >= 29 && jambScore <= 34) {
+                remarks = "E" 
+                alert(remarks)
+                console.log(remarks)
+            }
+            else if (jambScore <= 29 && jambScore>=0){
                 remarks = "F"
                 console.log(remarks)
                 alert(remarks)
             }
             
-            else if (jambScore < 0){
+            else if (jambScore <= -1){
                 remarks = "Out of bonds"
                 console.log(remarks)
                 alert(remarks)
@@ -64,7 +93,7 @@
                 alert(remarks)
             }
             else{
-                remarks = "Out of bond"
+                remarks = "Input your score to have a correct grading"
                 console.log(remarks)
                 alert(remarks)
             }

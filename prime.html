@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class = "results">
+    <h2> Enter the Number </h2>
+    Number: <input type = "number" name = "number" id = "number" required>
+    <button type = "button" onclick = "checkForPrime()" > Submit </button>
+    <div class = "resultText">
+    <p id = "result"> </p>
+    </div>
+    </div>
+    </div>
+    <script type = "text/javascript">
+    function checkForPrime() {
+          num = document.getElementById("number").value;
+          if(num == '' || num < 1) {
+          alert("Please Enter a valid number")
+          }
+          return
+          var i;
+          var prime = true;
+          if (num == 1) {
+          prime = false;
+          } else {
+          if (num % i == 0) {
+          prime = false;
+          }
+          }
+          if(prime == true) {
+          alert("The number " + num + " is a prime number")
+          } else {
+          alert("The number " + num + " is not a prime number")
+
+          }
+    }
+    </script>
+</body>
+</html>
